@@ -3,3 +3,10 @@
 # binder_h5py
 Basic test to figure out why h5py isn't working on binder
 
+When attempting to import `h5py`, I was getting this error:
+
+```python
+ImportError: cannot import name '_errors'
+```
+
+The conclusion is that something about versioning is broken with `h5py <3.3.0`, so we just specify a higher version.
