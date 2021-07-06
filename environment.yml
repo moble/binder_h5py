@@ -4,3 +4,6 @@ channels:
   - defaults
 dependencies:
   - h5py
+  - pip
+  - pip:
+    - gw-matched-filtering-demo
